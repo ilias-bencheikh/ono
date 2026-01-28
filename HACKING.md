@@ -18,8 +18,7 @@ After you cloned `ono` with Git, run the following:
 
 ```shell-session
 $ cd ono
-$ opam switch create .
-$ opam pin ./vendor/owi/owi.opam --with-test --with-dev-setup --with-doc
+$ opam switch create . --deps-only
 $ opam install . --with-test --with-dev-setup --with-doc --deps-only
 ```
 

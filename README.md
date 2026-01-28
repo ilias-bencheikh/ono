@@ -202,6 +202,8 @@ Implémentez un module Wasm qui résoud des polynômes de degrés au plus 3 en u
 Les valeurs des coefficients $a$, $b$, $c$ et $d$ devront être demandées à l'utilisateur et lues sur l'entrée standard.
 Attention, il faut afficher *toutes* les solutions possibles.
 
+Vous pouvez lancer `ono` en mode symbolique ainsi: `ono symbolic file.wat`. Vous pouvez regarder le dossier `test/cram/symbolic/basic_symbol.t/` pour comprendre comment créer une valeur symbolique et lancer un programme simple utilisant celle-ci.
+
 ### Génération de configurations pour le jeu de la Vie (5 points)
 
 Le but de cette partie va être d'utiliser l'interpréteur symbolique pour *générer* des configurations intéressantes de jeu de la vie.
