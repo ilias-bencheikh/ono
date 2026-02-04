@@ -6,4 +6,5 @@
 
 # Preliminaires
 
+- implémentation du factorielle
 - implémentation de square_i64 et print_i64 
