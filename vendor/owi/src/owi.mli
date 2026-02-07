@@ -120,6 +120,8 @@ module Concrete_i32 : sig
 
   val of_int : Int.t -> t
 
+  val to_int : t -> Int.t
+
   val of_int32 : Int32.t -> t
 
   val add : t -> t -> t
@@ -156,6 +158,8 @@ module Concrete_f32 : sig
 
   val of_float : float -> t
 
+  val to_float : t -> float
+
   val pp : t Fmt.t
 end
 
@@ -163,6 +167,8 @@ module Concrete_f64 : sig
   type t
 
   val of_float : float -> t
+
+  val to_float : t -> float
 
   val pp : t Fmt.t
 end

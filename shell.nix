@@ -4,6 +4,14 @@
 }:
 
 let
+  smtml = pkgs.ocamlPackages.smtml.overrideAttrs (old: {
+    src = pkgs.fetchFromGitHub {
+      owner = "formalsec";
+      repo = "smtml";
+      rev = "00590beec9b8b1751857869ebfe515ac7340de78";
+      hash = "sha256-ZS+SVmpmvUP2V3DTQ5+QNjFWgj3O3vFIST5c7CifIos=";
+    };
+  });
   owiSubShell = import ./vendor/owi/shell.nix { inherit pkgs; };
 in
 
